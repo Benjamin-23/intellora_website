@@ -1,21 +1,16 @@
 import { motion } from "motion/react";
+import { BrainCircuit, Wallet } from "lucide-react";
 
 const PARTNERS = [
   {
-    name: "Safaricom",
-    logo: "https://hercules-cdn.com/file_IUW66dCddaWbJQTU1VkkAl27",
+    name: "Anthropic",
+    description: "Claude models power our intelligent product features",
+    icon: BrainCircuit,
   },
   {
-    name: "Google",
-    logo: "https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png",
-  },
-  {
-    name: "Natively AI",
-    logo: "https://hercules-cdn.com/file_F6WOTdZYiTj97fGekx7aJsl1",
-  },
-  {
-    name: "InspireHub",
-    logo: "https://hercules-cdn.com/file_GP4naJ3JMBFckr5zxGKMnX1y",
+    name: "M-Pesa",
+    description: "Seamless mobile money payments for every transaction",
+    icon: Wallet,
   },
 ];
 
@@ -35,17 +30,18 @@ export default function TrustedPartners() {
           className="text-center mb-14"
         >
           <span className="text-sm font-semibold text-primary uppercase tracking-wider">
-            Trusted Partners
+            Trusted Integrations
           </span>
           <h2 className="mt-2 text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-foreground">
-            Built With Industry Leaders
+            Built On Industry Leaders
           </h2>
           <p className="mt-3 text-muted-foreground max-w-xl mx-auto">
-            We collaborate with world-class companies to deliver exceptional products and services.
+            We integrate with best-in-class platforms to power intelligent
+            features and seamless payments.
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8">
+        <div className="grid sm:grid-cols-2 gap-6 sm:gap-8 max-w-2xl mx-auto">
           {PARTNERS.map((partner, idx) => (
             <motion.div
               key={partner.name}
@@ -53,18 +49,15 @@ export default function TrustedPartners() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-40px" }}
               transition={{ duration: 0.5, delay: idx * 0.1 }}
-              className="flex flex-col items-center gap-4"
+              className="flex items-center gap-4 rounded-2xl bg-card border border-border/50 shadow-lg p-6"
             >
-              <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-full bg-white flex items-center justify-center p-4 shadow-lg border border-border/30">
-                <img
-                  src={partner.logo}
-                  alt={partner.name}
-                  className="w-full h-full object-contain rounded-full"
-                />
+              <div className="w-14 h-14 shrink-0 rounded-xl bg-primary/10 flex items-center justify-center">
+                <partner.icon className="w-7 h-7 text-primary" />
               </div>
-              <span className="text-sm sm:text-base font-semibold text-foreground">
-                {partner.name}
-              </span>
+              <div>
+                <span className="text-lg font-bold text-foreground">{partner.name}</span>
+                <p className="text-sm text-muted-foreground mt-0.5">{partner.description}</p>
+              </div>
             </motion.div>
           ))}
         </div>

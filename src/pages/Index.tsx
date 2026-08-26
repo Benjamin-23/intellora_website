@@ -5,7 +5,7 @@ import About from "./home/_components/About.tsx";
 import Services from "./home/_components/Services.tsx";
 import Products from "./home/_components/Products.tsx";
 import TrustedPartners from "./home/_components/TrustedPartners.tsx";
-import Team from "./home/_components/Team.tsx";
+import Testimonials from "./home/_components/Testimonials.tsx";
 import Contact from "./home/_components/Contact.tsx";
 import Footer from "./home/_components/Footer.tsx";
 import SectionDivider from "./home/_components/SectionDivider.tsx";
@@ -28,7 +28,7 @@ export default function Index() {
       <SectionDivider variant="pulse" />
       <TrustedPartners />
       <SectionDivider variant="slant" />
-      <Team />
+      <Testimonials />
       <SectionDivider variant="dots" />
       <Contact />
       <SectionDivider variant="wave" flip />

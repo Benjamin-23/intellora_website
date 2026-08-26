@@ -37,7 +37,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">Email us at</p>
-                  <p className="font-medium text-foreground">hello@intellora.com</p>
+                  <p className="font-medium text-foreground">solutions@intellorasolutions.com</p>
                 </div>
               </div>
               <div className="flex items-center gap-4">
@@ -46,7 +46,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">Based in</p>
-                  <p className="font-medium text-foreground">Remote-first, Global</p>
+                  <p className="font-medium text-foreground">Nairobi</p>
                 </div>
               </div>
               <a
@@ -59,7 +59,7 @@ export default function Contact() {
                   <WhatsAppIcon className="w-5 h-5 text-primary" />
                 </div>
                 <div>
-                  <p className="text-sm text-muted-foreground">Chat on WhatsApp</p>
+                  <p className="text-sm text-muted-foreground">Contact</p>
                   <p className="font-medium text-foreground group-hover:text-primary transition-colors">
                     {WHATSAPP_DISPLAY}
                   </p>
@@ -86,7 +86,7 @@ export default function Contact() {
               </p>
               <div className="mt-8 flex flex-col sm:flex-row gap-4">
                 <Button size="lg" className="gap-2" asChild>
-                  <a href="mailto:hello@intellora.com">
+                  <a href="mailto:solutions@intellorasolutions.com">
                     Send Email <ArrowUpRight className="w-4 h-4" />
                   </a>
                 </Button>

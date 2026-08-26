@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import { Globe, Server, Wrench, Smartphone, BrainCircuit } from "lucide-react";
+import { Globe, Briefcase, Wrench, Smartphone, BrainCircuit } from "lucide-react";
 
 const SERVICES = [
   {
@@ -14,10 +14,10 @@ const SERVICES = [
   },
   {
     number: "02",
-    icon: Server,
-    title: "Hosting Service",
+    icon: Briefcase,
+    title: "IT Consulting",
     description:
-      "Reliable, secure hosting with monitoring and backups, so your site and apps stay online and perform when it matters.",
+      "Strategic guidance on technology decisions - from architecture and tooling to scaling your systems the right way.",
     color: "var(--ring)",
     bg: "bg-ring/10",
     text: "text-ring",
