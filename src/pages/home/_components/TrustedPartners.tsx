@@ -16,9 +16,7 @@ const PARTNERS = [
 
 export default function TrustedPartners() {
   return (
-    <section className="py-20 sm:py-28 relative overflow-hidden">
-      {/* Gradient background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-card/80 via-background to-primary/5" />
+    <section className="py-20 sm:py-28 relative overflow-hidden section-violet">
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-primary/5 rounded-full blur-3xl" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

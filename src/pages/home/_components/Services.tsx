@@ -58,7 +58,7 @@ const STICKY_TOP = ["top-24", "top-28", "top-32", "top-36", "top-40"];
 
 export default function Services() {
   return (
-    <section id="services" className="relative py-24 sm:py-32">
+    <section id="services" className="dark section-ink relative py-24 sm:py-32">
       {/* Decorative accent - distinct from the sections above/below */}
       <div className="absolute top-1/3 right-0 w-72 h-72 rounded-full bg-primary/10 blur-3xl" />
       <div className="absolute bottom-0 left-0 w-56 h-56 rounded-full bg-ring/10 blur-3xl" />

@@ -22,10 +22,8 @@ function MarqueeRow({ items, direction = "left", duration = 30 }: { items: typeo
   const duplicated = [...items, ...items, ...items];
 
   return (
-    <div className="relative overflow-hidden">
-      {/* Fade edges */}
-      <div className="absolute left-0 top-0 bottom-0 w-20 sm:w-32 bg-gradient-to-r from-background to-transparent z-10" />
-      <div className="absolute right-0 top-0 bottom-0 w-20 sm:w-32 bg-gradient-to-l from-background to-transparent z-10" />
+    // Fade edges with a mask so they blend into whatever band color sits behind
+    <div className="relative overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
 
       <motion.div
         className="flex gap-6 sm:gap-10"
@@ -63,9 +61,7 @@ function MarqueeRow({ items, direction = "left", duration = 30 }: { items: typeo
 
 export default function Partners() {
   return (
-    <section className="relative py-20 sm:py-28 overflow-hidden">
-      {/* Gradient background for visual depth */}
-      <div className="absolute inset-0 bg-gradient-to-b from-background via-primary/5 to-background" />
+    <section className="relative py-20 sm:py-28 overflow-hidden section-warm">
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary/8 via-transparent to-transparent" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

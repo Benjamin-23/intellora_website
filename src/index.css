@@ -209,3 +209,36 @@
     cursor: pointer;
   }
 }
+
+/* Section bands - each section gets its own tone so the page doesn't read as one flat color */
+@layer utilities {
+  .section-warm {
+    background: linear-gradient(
+      180deg,
+      color-mix(in oklch, var(--primary) 10%, var(--background)),
+      color-mix(in oklch, var(--primary) 4%, var(--background))
+    );
+  }
+
+  .section-teal {
+    background: linear-gradient(
+      160deg,
+      color-mix(in oklch, var(--chart-3) 14%, var(--background)),
+      color-mix(in oklch, var(--chart-3) 5%, var(--background))
+    );
+  }
+
+  .section-violet {
+    background: linear-gradient(
+      160deg,
+      color-mix(in oklch, var(--chart-4) 12%, var(--background)),
+      color-mix(in oklch, var(--chart-2) 6%, var(--background))
+    );
+  }
+
+  /* Deep contrast band - pair with the "dark" class so text and cards inside use dark tokens */
+  .section-ink {
+    background: linear-gradient(180deg, oklch(0.21 0.045 40), oklch(0.13 0.03 30));
+    color: var(--foreground);
+  }
+}

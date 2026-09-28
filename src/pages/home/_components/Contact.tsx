@@ -5,7 +5,7 @@ import { WhatsAppIcon, WHATSAPP_LINK, WHATSAPP_DISPLAY } from "./WhatsAppButton.
 
 export default function Contact() {
   return (
-    <section id="contact" className="relative py-24 sm:py-32 bg-muted/30 overflow-hidden">
+    <section id="contact" className="relative py-24 sm:py-32 section-warm overflow-hidden">
       {/* Decorative accents - unique to this section */}
       <div className="absolute top-0 right-1/4 w-80 h-80 rounded-full bg-accent/20 blur-3xl" />
       <div className="absolute -bottom-32 -left-16 w-96 h-96 rounded-full bg-ring/10 blur-3xl" />
@@ -37,7 +37,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">Email us at</p>
-                  <p className="font-medium text-foreground">solutions@intellorasolutions.com</p>
+                  <p className="font-medium text-foreground">support@intellorasolutions.com</p>
                 </div>
               </div>
               <div className="flex items-center gap-4">
@@ -86,7 +86,7 @@ export default function Contact() {
               </p>
               <div className="mt-8 flex flex-col sm:flex-row gap-4">
                 <Button size="lg" className="gap-2" asChild>
-                  <a href="mailto:solutions@intellorasolutions.com">
+                  <a href="mailto:support@intellorasolutions.com">
                     Send Email <ArrowUpRight className="w-4 h-4" />
                   </a>
                 </Button>

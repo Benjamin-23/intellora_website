@@ -24,7 +24,7 @@ const VALUES = [
 
 export default function About() {
   return (
-    <section id="about" className="relative py-24 sm:py-32 bg-muted/30 overflow-hidden">
+    <section id="about" className="relative py-24 sm:py-32 section-teal overflow-hidden">
       {/* Decorative accents - breaks up the flat section background */}
       <div className="absolute -top-24 -left-24 w-80 h-80 rounded-full bg-[oklch(0.6_0.18_300)]/10 blur-3xl" />
       <div className="absolute bottom-0 right-0 w-96 h-96 rounded-full bg-accent/20 blur-3xl" />
