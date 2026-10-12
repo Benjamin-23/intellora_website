@@ -24,7 +24,7 @@ export default function Hero() {
         className="absolute -bottom-28 -left-28 w-64 h-64 sm:w-80 sm:h-80 rounded-full pointer-events-none opacity-[0.12] dark:hidden"
         style={{
           background:
-            "radial-gradient(circle at 38% 35%, #fef3c7 0%, #fbbf24 40%, #f97316 75%, transparent 100%)",
+            "radial-gradient(circle at 38% 35%, #fef9c3 0%, #fde047 40%, #eab308 75%, transparent 100%)",
         }}
       />
       <div

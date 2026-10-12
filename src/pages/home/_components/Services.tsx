@@ -28,9 +28,9 @@ const SERVICES = [
     title: "Website Fix or Upgrade",
     description:
       "Stuck with an outdated or broken site? We diagnose, repair, and modernize existing websites without starting from scratch.",
-    color: "oklch(0.62 0.13 175)",
-    bg: "bg-[oklch(0.62_0.13_175)]/10",
-    text: "text-[oklch(0.62_0.13_175)]",
+    color: "var(--chart-3)",
+    bg: "bg-chart-3/10",
+    text: "text-chart-3",
   },
   {
     number: "04",
@@ -38,9 +38,9 @@ const SERVICES = [
     title: "Mobile App Development",
     description:
       "Native-feel iOS and Android apps built for real-world use, from first prototype through to app store launch.",
-    color: "oklch(0.6 0.18 300)",
-    bg: "bg-[oklch(0.6_0.18_300)]/10",
-    text: "text-[oklch(0.6_0.18_300)]",
+    color: "var(--chart-4)",
+    bg: "bg-chart-4/10",
+    text: "text-chart-4",
   },
   {
     number: "05",
@@ -48,9 +48,9 @@ const SERVICES = [
     title: "Software Systems with AI",
     description:
       "Intelligent systems that put AI to work in your product - from smart automation to fully custom machine-learning features.",
-    color: "oklch(0.75 0.17 105)",
-    bg: "bg-[oklch(0.75_0.17_105)]/10",
-    text: "text-[oklch(0.75_0.17_105)]",
+    color: "var(--accent-foreground)",
+    bg: "bg-accent",
+    text: "text-accent-foreground",
   },
 ];
 

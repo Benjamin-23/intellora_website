@@ -412,13 +412,13 @@ export default function Products() {
       {/* Filled shape confetti - breaks up the otherwise plain top area */}
       <div className="absolute top-10 left-[8%] w-4 h-4 rounded-full bg-primary/40" />
       <div className="hidden sm:block absolute top-24 right-[12%] w-14 h-14 rounded-full border-[3px] border-ring/30" />
-      <div className="hidden sm:block absolute top-8 right-[22%] w-6 h-6 rotate-45 rounded-md bg-[oklch(0.6_0.18_300)]/20" />
+      <div className="hidden sm:block absolute top-8 right-[22%] w-6 h-6 rotate-45 rounded-md bg-chart-4/20" />
       <div
         className="hidden lg:block absolute top-16 right-[6%] w-0 h-0"
         style={{
           borderLeft: "14px solid transparent",
           borderRight: "14px solid transparent",
-          borderBottom: "22px solid oklch(0.75 0.17 105 / 0.18)",
+          borderBottom: "22px solid color-mix(in oklch, var(--chart-5) 30%, transparent)",
         }}
       />
       <div className="hidden sm:flex absolute top-32 left-[18%] gap-1.5">
@@ -426,7 +426,7 @@ export default function Products() {
         <span className="w-1.5 h-1.5 rounded-full bg-ring/35" />
         <span className="w-1.5 h-1.5 rounded-full bg-ring/20" />
       </div>
-      <div className="absolute bottom-4 left-[4%] sm:left-[10%] w-3 h-3 rounded-full bg-[oklch(0.62_0.13_175)]/40" />
+      <div className="absolute bottom-4 left-[4%] sm:left-[10%] w-3 h-3 rounded-full bg-chart-3/40" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section heading */}
@@ -629,7 +629,7 @@ export default function Products() {
                             {[
                               { l: "J", c: "bg-primary" },
                               { l: "G", c: "bg-ring" },
-                              { l: "D", c: "bg-[oklch(0.62_0.13_175)]" },
+                              { l: "D", c: "bg-chart-3" },
                             ].map((a) => (
                               <div
                                 key={a.l}

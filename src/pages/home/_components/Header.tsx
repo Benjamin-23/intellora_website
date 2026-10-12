@@ -3,7 +3,7 @@ import { Menu, X, Phone } from "lucide-react";
 import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button.tsx";
 import { ThemeToggle } from "@/components/ui/theme-toggle.tsx";
-import IntelloraLogo from "./IntelloraLogo.tsx";
+import IntelloraLogo, { IntelloraWordmark } from "./IntelloraLogo.tsx";
 import { WHATSAPP_NUMBER, WHATSAPP_DISPLAY } from "./WhatsAppButton.tsx";
 
 const PHONE_LINK = `tel:+${WHATSAPP_NUMBER}`;
@@ -42,10 +42,8 @@ export default function Header() {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <a href="#hero" className="flex items-center gap-2">
-            <IntelloraLogo className="w-9 h-9" />
-            <span className="font-bold text-xl tracking-tight text-foreground">
-              Intellora
-            </span>
+            <IntelloraLogo className="w-10 h-10" />
+            <IntelloraWordmark className="text-lg" />
           </a>
 
           {/* Desktop Nav */}

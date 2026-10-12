@@ -24,9 +24,9 @@ const VALUES = [
 
 export default function About() {
   return (
-    <section id="about" className="relative py-24 sm:py-32 section-teal overflow-hidden">
+    <section id="about" className="relative py-24 sm:py-32 section-sky overflow-hidden">
       {/* Decorative accents - breaks up the flat section background */}
-      <div className="absolute -top-24 -left-24 w-80 h-80 rounded-full bg-[oklch(0.6_0.18_300)]/10 blur-3xl" />
+      <div className="absolute -top-24 -left-24 w-80 h-80 rounded-full bg-chart-4/10 blur-3xl" />
       <div className="absolute bottom-0 right-0 w-96 h-96 rounded-full bg-accent/20 blur-3xl" />
       <div
         className="absolute inset-0 opacity-[0.03]"
@@ -40,7 +40,7 @@ export default function About() {
       {/* Filled shape accents - a different motif from the Products section confetti */}
       <div className="hidden sm:block absolute top-16 right-[8%] w-16 h-16 rounded-full border-2 border-dashed border-primary/25" />
       <div
-        className="hidden sm:block absolute bottom-20 left-[6%] w-10 h-10 bg-[oklch(0.62_0.13_175)]/20"
+        className="hidden sm:block absolute bottom-20 left-[6%] w-10 h-10 bg-chart-3/20"
         style={{ clipPath: "polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%)" }}
       />
       <div className="absolute top-1/2 left-2 sm:left-4 flex flex-col gap-1.5">
@@ -51,7 +51,7 @@ export default function About() {
         <span className="absolute top-1/2 left-0 w-full h-[2px] -translate-y-1/2 bg-primary/30" />
         <span className="absolute left-1/2 top-0 h-full w-[2px] -translate-x-1/2 bg-primary/30" />
       </div>
-      <div className="absolute bottom-10 right-[10%] w-3 h-3 rounded-full bg-[oklch(0.6_0.18_300)]/35" />
+      <div className="absolute bottom-10 right-[10%] w-3 h-3 rounded-full bg-chart-4/35" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-center">

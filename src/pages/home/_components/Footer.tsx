@@ -1,4 +1,4 @@
-import IntelloraLogo from "./IntelloraLogo.tsx";
+import IntelloraLogo, { IntelloraWordmark } from "./IntelloraLogo.tsx";
 
 const FOOTER_LINKS = [
   { label: "Home", href: "#hero" },
@@ -17,10 +17,8 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Logo */}
           <div className="flex items-center gap-2">
-            <IntelloraLogo className="w-8 h-8" />
-            <span className="font-bold text-lg tracking-tight text-foreground">
-              Intellora
-            </span>
+            <IntelloraLogo className="w-9 h-9" />
+            <IntelloraWordmark className="text-base" />
           </div>
 
           {/* Links */}
