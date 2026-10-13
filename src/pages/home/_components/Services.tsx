@@ -78,8 +78,11 @@ export default function Services() {
             What We Can Build For You
           </h2>
           <p className="mt-4 text-muted-foreground text-lg max-w-2xl mx-auto">
-            Beyond our own products, we partner with teams and businesses to
-            design, build, and maintain software that works.
+            Beyond our own products, we partner with teams and businesses to{" "}
+            <strong className="font-semibold text-foreground">
+              design, build, and maintain
+            </strong>{" "}
+            software that works.
           </p>
         </motion.div>
 

@@ -2,6 +2,7 @@ import { motion } from "motion/react";
 import { Mail, MapPin, ArrowUpRight } from "lucide-react";
 import { Button } from "@/components/ui/button.tsx";
 import { WhatsAppIcon, WHATSAPP_LINK, WHATSAPP_DISPLAY } from "./WhatsAppButton.tsx";
+import ContactIllustration from "./ContactIllustration.tsx";
 
 export default function Contact() {
   return (
@@ -27,7 +28,11 @@ export default function Contact() {
             </h2>
             <p className="mt-4 text-muted-foreground text-lg leading-relaxed">
               Have a project in mind or want to collaborate? We would love to hear
-              from you. Reach out and let us build something amazing together.
+              from you. Reach out and let us{" "}
+              <strong className="font-semibold text-foreground">
+                build something amazing together
+              </strong>
+              .
             </p>
 
             <div className="mt-10 space-y-6">
@@ -77,6 +82,7 @@ export default function Contact() {
             className="flex items-center"
           >
             <div className="w-full p-8 sm:p-10 rounded-2xl bg-card border border-border shadow-lg">
+              <ContactIllustration />
               <h3 className="text-xl font-bold text-foreground">
                 Ready to start your next project?
               </h3>

@@ -2,6 +2,7 @@ import { Suspense, lazy } from "react";
 import { motion } from "motion/react";
 import { ArrowRight, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button.tsx";
+import HeroIllustration from "./HeroIllustration.tsx";
 
 const HeroScene = lazy(() => import("./HeroScene.tsx"));
 
@@ -78,9 +79,12 @@ export default function Hero() {
               transition={{ delay: 0.5, duration: 0.6 }}
               className="mt-6 text-lg sm:text-xl text-muted-foreground max-w-xl text-balance">
               
-              Intellora crafts intelligent software products that transform how
-              people live and work. From home services to property technology, we
-              deliver excellence.
+              Intellora crafts{" "}
+              <strong className="font-semibold text-foreground">intelligent software</strong>{" "}
+              that transforms how people live and work. From{" "}
+              <strong className="font-semibold text-foreground">startups to enterprises</strong>,
+              across <strong className="font-semibold text-foreground">every industry</strong>,
+              we turn bold ideas into products that deliver.
             </motion.p>
 
             {/* CTAs */}
@@ -125,30 +129,13 @@ export default function Hero() {
             </motion.div>
           </div>
 
-          {/* Right column - Humanoid AI Image */}
+          {/* Right column - animated illustration (below the text on mobile) */}
           <motion.div
             initial={{ opacity: 0, scale: 0.9, x: 40 }}
             animate={{ opacity: 1, scale: 1, x: 0 }}
             transition={{ delay: 0.4, duration: 0.8, ease: "easeOut" }}
-            className="relative hidden lg:flex items-center justify-center">
-            
-            {/* Glow effect behind image */}
-            <div className="absolute inset-0 bg-gradient-to-t from-primary/20 via-transparent to-ring/10 rounded-full blur-3xl scale-75" />
-
-            {/* The humanoid image */}
-            <div className="relative">
-              <img
-                src="https://hercules-cdn.com/file_beJkdftid8qUAsX6grq5aJqC"
-                alt="Futuristic AI humanoid representing Intellora's intelligent technology"
-                className="w-full max-w-lg h-auto object-contain"
-                style={{
-                  maskImage:
-                    "radial-gradient(ellipse 75% 80% at 50% 40%, black 60%, transparent 100%)",
-                  WebkitMaskImage:
-                    "radial-gradient(ellipse 75% 80% at 50% 40%, black 60%, transparent 100%)",
-                }}
-              />
-            </div>
+            className="relative flex items-center justify-center pb-16 lg:pb-0">
+            <HeroIllustration />
           </motion.div>
         </div>
       </div>

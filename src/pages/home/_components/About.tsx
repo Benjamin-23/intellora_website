@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
 import { Lightbulb, Target, Zap } from "lucide-react";
+import IndustriesIllustration from "./IndustriesIllustration.tsx";
 
 const VALUES = [
   {
@@ -84,16 +85,24 @@ export default function About() {
               People Love
             </h2>
             <p className="mt-6 text-muted-foreground text-lg leading-relaxed">
-              Intellora is a product studio focused on creating intelligent
-              digital solutions. We combine deep technical expertise with
-              beautiful design to deliver products that solve real problems in
-              home services, real estate, and beyond.
+              Intellora is a product studio focused on creating{" "}
+              <strong className="font-semibold text-foreground">intelligent digital solutions</strong>.
+              We combine deep technical expertise with beautiful design to
+              deliver products that solve real problems for businesses and
+              people in{" "}
+              <strong className="font-semibold text-foreground">every industry</strong> - from{" "}
+              <strong className="font-semibold text-foreground">
+                finance, healthcare, and education
+              </strong>{" "}
+              to <strong className="font-semibold text-foreground">retail, logistics</strong>, and
+              beyond.
             </p>
             <p className="mt-4 text-muted-foreground leading-relaxed">
-              Founded with the mission of making technology accessible and
-              impactful, we continue to push boundaries with every product we
-              launch.
+              Founded with the mission of making technology{" "}
+              <strong className="font-semibold text-foreground">accessible and impactful</strong>,
+              we continue to push boundaries with every product we launch.
             </p>
+            <IndustriesIllustration />
           </motion.div>
 
           {/* Values side */}
